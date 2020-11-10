@@ -54,13 +54,9 @@ class RockPaperScissor:
         elif diff == -1 :
             print('User Won!')
             return 'user'
-            # print('Computer Won/-1 USER?!')
-            # return 'comp'
         elif diff == -2:
             print('User Won!')
             return 'user'
-            # print('Computer Won/Myabe User!')
-            # return 'comp'
     
     #Method to display score       
     def displayScore(self):
