@@ -40,9 +40,11 @@ class RockPaperScissor:
         #order diff between user and computer is 2. Means user chose paper and computer got rock-
         #by checking order dictionary from above cell
         if(diff == 2):
-            print('User Won!')
-            return 'user'
-        elif diff ==1:
+            # print('User Won!')
+            # return 'user'
+            print('Computer Won!')
+            return 'comp'
+        elif diff == 1:
             print('Computer Won!')
             return 'comp'
         elif diff == 0 :
@@ -52,9 +54,13 @@ class RockPaperScissor:
         elif diff == -1 :
             print('User Won!')
             return 'user'
+            # print('Computer Won/-1 USER?!')
+            # return 'comp'
         elif diff == -2:
             print('User Won!')
             return 'user'
+            # print('Computer Won/Myabe User!')
+            # return 'comp'
     
     #Method to display score       
     def displayScore(self):
@@ -75,7 +81,7 @@ class RockPaperScissor:
     
     #Method that conducts rounds and adds scores based on which player won    
     def run(self):
-        for i in range(self.rounds):
+        for x in range(self.rounds):
             x=self.won_round()
             if x=='user':
                 self.user_won += 1 #Increase the score

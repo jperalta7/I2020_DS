@@ -33,4 +33,3 @@ class GuessingGame:
 if __name__ == '__main__':
     game = GuessingGame()
     game.start()
-print("hello")
