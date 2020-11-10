@@ -9,7 +9,7 @@ class RockPaperScissor:
         self.reverse_choices = {0: 'rock', 1: 'paper',  2: 'scissors'}
     
     #Method to take computer's input
-    def computers_turn(self):    
+    def computers_turn(self):
         turn = random.randint(0,2)
         return (turn, self.reverse_choices[turn])
     
