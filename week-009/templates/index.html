@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+
+    Hello {{ name }} 
+
+    <h1>    Register for Your TKH Track Fellowship</h1>
+    <form action="/register" method="POST">
+        <input name="name" placeholder="Name" type="text">
+        <select name="track">
+            <option disabled selected value="">Track</option>
+            <option value="Web Dev W. JavaScript">Web Development W. JavaScript</option>
+            <option value="Data Science W. Python">Data Science W. Python</option>
+        </select> 
+        <input type="submit" value="Register">   
+    </form>
+</body>
+</html>
