@@ -16,7 +16,9 @@ def main():
         new_row = DBTable(column_1=key, column_2=val)
         print(new_row)
         db.session.add(new_row)
-        db.session.commit()
+        db.session.commit()    
+
+    #return rows
 
 if __name__ == '__main__':
     main()
