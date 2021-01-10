@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div>
+    {% for row in data %}
+    <div>
+        <table>
+            <tr>
+                <th>
+                    
+                </th>
+            </tr>
+         
+            <tr></tr>
+        </table>
+        >{{row.rank}}: {{row.title}}</h1>
+        <p>{{row.rating}}</p>
+        <a href={{row.link}}>Learn more here</a>
+    </div>
+{% endfor %}
+</div>
+
+<div>
+    {% for row in data %}
+        <div>
+            <h1>{{row.rank}}: {{row.title}}</h1>
+            <p>{{row.rating}}</p>
+            <a href={{row.link}}>Learn more here</a>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
